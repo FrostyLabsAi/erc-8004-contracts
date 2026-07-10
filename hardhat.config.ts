@@ -815,13 +815,13 @@ const config: HardhatUserConfig = {
       type: "http",
       chainType: "l1",
       url: process.env.HYPEREVM_RPC_URL || "https://rpc.hyperliquid.xyz/evm",
-      accounts: process.env.DEPLOYER_PK ? [process.env.DEPLOYER_PK] : [],
+      accounts: process.env.HYPEREVM_PRIVATE_KEY ? [process.env.HYPEREVM_PRIVATE_KEY] : [],
     },
     hyperevmTestnet: {
       type: "http",
       chainType: "l1",
       url: process.env.HYPEREVM_TESTNET_RPC_URL || "https://rpc.hyperliquid-testnet.xyz/evm",
-      accounts: process.env.DEPLOYER_PK ? [process.env.DEPLOYER_PK] : [],
+      accounts: process.env.HYPEREVM_TESTNET_PRIVATE_KEY ? [process.env.HYPEREVM_TESTNET_PRIVATE_KEY] : [],
     },
   },
 };
